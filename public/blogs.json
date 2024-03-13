@@ -1,0 +1,72 @@
+[
+    {
+        "id": "123456",
+        "cover": "https://i.ibb.co/56N9mVJ/html-system-website-concept.jpg",
+        "title": "Building the Future: Web Development Trends of 2024",
+        "author_img": "https://i.ibb.co/4mP6vd4/petr-sevcovic-e12w-QLAj-Qi0-unsplash.jpg",
+        "author_name": "Alex Johnson",
+        "posted_date": "March 13, 2024",
+        "reading_time": 5,
+        "hashtags": [
+            "webdevelopment",
+            "trends",
+            "technology"
+        ]
+    },
+    {
+        "id": "234567",
+        "cover": "https://i.ibb.co/4jF1M5D/rami-al-zayat-w33-zg-d-NL4-unsplash.jpg",
+        "title": "The Next Wave of Mobile App Development",
+        "author_img": "https://i.ibb.co/D5F6KtH/diego-hernandez-MSepzb-KFz10-unsplash.jpg",
+        "author_name": "Jordan Lee",
+        "posted_date": "March 14, 2024",
+        "reading_time": 7,
+        "hashtags": [
+            "mobileapps",
+            "development",
+            "innovation"
+        ]
+    },
+    {
+        "id": "345678",
+        "cover": "https://i.ibb.co/SNVM3HR/steve-johnson-0i-V9-Lm-PDn0-unsplash.jpg",
+        "title": "AI and Machine Learning: Revolutionizing Software Engineering",
+        "author_img": "https://i.ibb.co/nPLJ9cP/robert-godwin-cdksy-Tq-EXzo-unsplash.jpg",
+        "author_name": "Taylor Smith",
+        "posted_date": "March 15, 2024",
+        "reading_time": 10,
+        "hashtags": [
+            "AI",
+            "machinelearning",
+            "softwareengineering"
+        ]
+    },
+    {
+        "id": "456789",
+        "cover": "https://i.ibb.co/5cqdSLr/pierre-borthiry-peiobty-v-BCVc-WUyvy-M-unsplash.jpg",
+        "title": "Blockchain Beyond Cryptocurrency: New Frontiers in Tech",
+        "author_img": "https://i.ibb.co/RccySm6/jake-nackos-IF9-TK5-Uy-KI-unsplash.jpg",
+        "author_name": "Samira Khalid",
+        "posted_date": "March 16, 2024",
+        "reading_time": 12,
+        "hashtags": [
+            "blockchain",
+            "technology",
+            "innovation"
+        ]
+    },
+    {
+        "id": "567890",
+        "cover": "https://i.ibb.co/jVkFy2x/21742831-6495319.jpg",
+        "title": "Exploring the Internet of Things (IoT): Connectivity Redefined",
+        "author_img": "https://i.ibb.co/BsDVJKL/alex-suprun-ZHv-M3-XIOHo-E-unsplash.jpg",
+        "author_name": "Chris Wong",
+        "posted_date": "March 17, 2024",
+        "reading_time": 15,
+        "hashtags": [
+            "IoT",
+            "connectivity",
+            "future"
+        ]
+    }
+]
