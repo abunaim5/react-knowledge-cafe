@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { MdBookmarkBorder } from "react-icons/md";
 
-const SinglePost = ({blog}) => {
-    const { cover, title, author_img, author_name, posted_date, reading_time } = blog;
+const SinglePost = ({ blog, handleBookMarks }) => {
+    const { cover, title, author_img, author_name, posted_date, reading_time, hashtags } = blog;
     return (
         <div>
             <div className="space-y-6 pb-10">
@@ -18,14 +19,18 @@ const SinglePost = ({blog}) => {
                             <p className="font-semibold text-gray-400">{posted_date}</p>
                         </div>
                     </div>
-                    <div>
+                    <div className="flex gap-2">
                         <p className="text-xl font-medium text-gray-400">{reading_time} min read</p>
-                        <p></p>
+                        <button onClick={() => handleBookMarks(blog)} className="text-gray-400 text-2xl"><MdBookmarkBorder /></button>
                     </div>
                 </div>
                 <h1 className="text-4xl font-bold">{title}</h1>
-                <p></p>
-                <a className="text-xl font-semibold underline text-purple-600" href="">Mark as read</a>
+                <div className="flex gap-2">
+                    {
+                        hashtags.map((tag, inx) => <p key={inx}>#{tag}</p>)
+                    }
+                </div>
+                <button className="text-xl font-semibold underline text-purple-600">Mark as read</button>
             </div>
             <hr />
         </div>
