@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { MdBookmarkBorder } from "react-icons/md";
 
-const SinglePost = ({ blog, handleBookMarks }) => {
+const SinglePost = ({ blog, handleBookMarks, handleReadTime }) => {
     const { cover, title, author_img, author_name, posted_date, reading_time, hashtags } = blog;
     return (
         <div>
@@ -21,16 +21,16 @@ const SinglePost = ({ blog, handleBookMarks }) => {
                     </div>
                     <div className="flex gap-2">
                         <p className="text-xl font-medium text-gray-400">{reading_time} min read</p>
-                        <button onClick={() => handleBookMarks(blog)} className="text-gray-400 text-2xl"><MdBookmarkBorder /></button>
+                        <button onClick={() => handleBookMarks(blog)} className='text-gray-400 text-2xl' ><MdBookmarkBorder /></button>
                     </div>
                 </div>
                 <h1 className="text-4xl font-bold">{title}</h1>
                 <div className="flex gap-2">
                     {
-                        hashtags.map((tag, inx) => <p key={inx}>#{tag}</p>)
+                        hashtags.map((tag, inx) => <p className='text-xl font-medium text-gray-400' key={inx}>#{tag}</p>)
                     }
                 </div>
-                <button className="text-xl font-semibold underline text-purple-600">Mark as read</button>
+                <button onClick={() => handleReadTime(blog)} className="text-xl font-semibold underline text-purple-600">Mark as read</button>
             </div>
             <hr />
         </div>
@@ -38,7 +38,9 @@ const SinglePost = ({ blog, handleBookMarks }) => {
 };
 
 SinglePost.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleBookMarks: PropTypes.func.isRequired,
+    handleReadTime: PropTypes.func.isRequired
 }
 
 export default SinglePost;
