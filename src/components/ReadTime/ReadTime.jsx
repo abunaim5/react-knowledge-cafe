@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const ReadTime = ({readTime}) => {
+const ReadTime = ({ readTime }) => {
     return (
         <div>
             <div className='border-2 border-purple-600 py-5 px-8 text-center rounded-lg bg-purple-100'>
